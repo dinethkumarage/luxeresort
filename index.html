@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Island Resort</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.jpg">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/favicon.jpg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="language-select">
+                <select>
+                    <option>English</option>
+                    <option>Français</option>
+                    <option>Deutsch</option>
+                </select>
+            </div>
+            <div class="user-actions">
+                <a href="#" class="my-booking">My Booking</a>
+                <a href="#" class="login">Log In</a>
+                <a href="#" class="sign-up">Sign Up</a>
+            </div>
+        </div>
+        <div class="logo">
+            <h1>ISLAND LUXE</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+            <ul id="nav-menu" class="hidden">
+                <li><a href="#resort">The Resort</a></li>
+                <li><a href="#villas">Villas</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#wellness">Wellness</a></li>
+                <li><a href="#offers">Offers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Luxe Luxury Island Beach Resort</h2>
+                <p>Experience paradise on Earth</p>
+                <a href="#" class="cta-button">Book Now</a>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <h2>Book Your Stay</h2>
+            <form id="bookingForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="date" id="checkIn" required>
+                <input type="date" id="checkOut" required>
+                <button type="submit">Book Now</button>
+            </form>
+            <h3>Current Bookings</h3>
+            <table id="bookingTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Check-in</th>
+                        <th>Check-out</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bookings will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="payment" class="payment-methods">
+            <div class="container">
+                <h2>Accepted Payment Methods</h2>
+                <div class="payment-icons">
+                    <img src="visa.png" alt="Visa">
+                    <img src="master.png" alt="Mastercard">
+                    <img src="paypal.png" alt="PayPal">
+                    <img src="amex (2).png" alt="American Express">
+                    <img src="jpmorgan.png" alt="JP Morgan">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Paradise Lane, Tropical Island</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@paradiseresort.com</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your Message" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Island Luxe Resort. All rights reserved.</p>
+    </footer>
+
+    <div class="floating-message">
+        <button id="messageBtn">Leave us a message!</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
